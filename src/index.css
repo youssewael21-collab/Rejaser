@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  box-sizing: border-box;
+  font-family: font;
+
+}
+@font-face {
+  font-family: font;
+  src: url(../Fonts/Tajawal/Tajawal-Black.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#222, #111);
+}
+.choose{
+  width: 250px !important;
+  height: 250px !important;
+  border: 5px solid white !important;
+  background: tomato !important;
+  transition: 0.5s;
+}
+.choose:hover{
+  box-shadow: 0 0 30px tomato;
+}
