@@ -109,7 +109,13 @@ export default function Rejaser() {
     >
       <CardMedia
         component="img"
-        style={{ width: "100%", height: "100%" }}
+        style={{
+          width: "100%",
+          height: "100%",
+          borderRadius: "10px",
+          border: "2px solid #bc42f5",
+          boxShadow: "0 0 5px #bc42f5, inset 0 0 5px #bc42f5",
+        }}
         image={film}
         alt={film}
       />
@@ -126,7 +132,7 @@ export default function Rejaser() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#fff",
+        background: "#050227",
         borderRadius: "20px",
         padding: "10px",
         cursor: "pointer",
@@ -151,9 +157,9 @@ export default function Rejaser() {
         justifyContent: "flex-start",
         alignItems: "center",
         flexDirection: "column",
-        background: "#333",
-        boxShadow: "0 0 30px 5px black",
-        border: "3px solid white",
+        background: "#07061b",
+        boxShadow: "0 0 30px 5px black, 0 0 5px #f5c542, inset 0 0 5px #f5c542",
+        border: "3px solid #f5c542",
         width: "70vw",
         height: "90vh",
         padding: "20px",
@@ -173,13 +179,25 @@ export default function Rejaser() {
         <Button
           onClick={handleUndo}
           disabled={history.length === 0}
-          style={{ background: "#f5c542", color: "black", fontSize: "16px" }}
+          style={{
+            background: "linear-gradient(150deg, #8b650dc5, #f5c542 70%)",
+            color: "black",
+            fontSize: "16px",
+            border: "2px solid #f5c542",
+            boxShadow: "0 0 5px #f5c542",
+          }}
         >
           رجوع
         </Button>
         <Button
           onClick={resetGame}
-          style={{ background: "darkred", color: "white", fontSize: "16px" }}
+          style={{
+            background: "linear-gradient(150deg, #3d0707d2, darkred 70%)",
+            color: "white",
+            fontSize: "16px",
+            border: "2px solid darkred",
+            boxShadow: "0 0 5px darkred",
+          }}
         >
           بداية جديدة
         </Button>
@@ -196,10 +214,11 @@ export default function Rejaser() {
       >
         <div
           style={{
-            background: "gold",
+            background: "linear-gradient( #1812048a, #f5c542)",
             padding: "10px",
-            border: "1px solid black",
-            borderRadius: "30px",
+            border: "1px solid #f5c542",
+            boxShadow: "0 0 5px #f5c542, inset 0 0 5px #f5c542",
+            borderRadius: "10px",
             width: "200px",
             height: "200px",
             transition: "background 0.2s",
@@ -227,8 +246,16 @@ export default function Rejaser() {
           <div style={{ color: "#fff", fontSize: "16px", textAlign: "center" }}>
             {message || "اضغط على فيلم لترى إذا كان الممثل التاني فيه."}
           </div>
-          <div style={{ color: "#fff", fontSize: "16px", textAlign: "center" }}>
+          <div
+            style={{
+              color: "#f5c542",
+              fontSize: "16px",
+              textAlign: "center",
+              fontWeight: "bold",
+            }}
+          >
             الممثل الهدف:
+            <br />
             <span style={{ fontWeight: "bold", marginLeft: "8px" }}>
               {targetActor.actor.split("/").pop().replace(".png", "")}
             </span>
@@ -237,10 +264,11 @@ export default function Rejaser() {
 
         <div
           style={{
-            background: "#ccc",
+            background: "linear-gradient( #0404188a, #424ef5)",
             padding: "10px",
-            border: "1px solid black",
-            borderRadius: "30px",
+            border: "1px solid #4e42f5",
+            boxShadow: "0 0 5px #4e42f5, inset 0 0 5px #4e42f5",
+            borderRadius: "10px",
             width: "200px",
             height: "200px",
             transition: "background 0.2s",

@@ -1,9 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif !important;
   box-sizing: border-box;
   font-family: font;
+  font-weight: bold !important;
 
 }
 @font-face {
@@ -19,15 +20,33 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#222, #111);
+  background: linear-gradient(rgb(5, 4, 15), rgb(23, 21, 71));
+}
+
+/* تغيير شريط الاسكرول */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f5c54225;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5b232;
 }
 .choose{
   width: 250px !important;
   height: 250px !important;
-  border: 5px solid white !important;
-  background: tomato !important;
+  border: 5px solid #f5c542 !important;
+  background: #07061b !important;
   transition: 0.5s;
 }
 .choose:hover{
-  box-shadow: 0 0 30px tomato;
+  box-shadow: 0 0 30px #f5c542;
 }
