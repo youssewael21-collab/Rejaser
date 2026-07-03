@@ -103,7 +103,7 @@ export default function Rejaser() {
 
   const filmCards = currentActor.film.map((film) => (
     <Button
-    className="film-card"
+      className="film-card"
       onClick={() => handleFilmClick(film)}
       key={film}
       style={{ minWidth: "20%", height: "100%" }}
@@ -125,6 +125,7 @@ export default function Rejaser() {
 
   const actorCards = matchedActors.map((actor) => (
     <div
+      className="actor-card"
       onClick={() => handleActorClick(actor)}
       key={actor.actor}
       style={{
@@ -216,16 +217,28 @@ export default function Rejaser() {
           marginBottom: "10px",
         }}
       >
+                <div
+                    className="current-actor"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            color: "white",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            gap: "10px",
+          }}
+          >
+
         <div
-          className="current-actor"
           style={{
             background: "linear-gradient( #1812048a, #f5c542)",
             padding: "10px",
             border: "1px solid #f5c542",
             boxShadow: "0 0 5px #f5c542, inset 0 0 5px #f5c542",
             borderRadius: "10px",
-            width: "200px",
-            height: "200px",
+            width: "100%",
+            height: "100%",
             transition: "background 0.2s",
           }}
         >
@@ -236,6 +249,12 @@ export default function Rejaser() {
             alt="current actor"
           />
         </div>
+                    <span style={{ fontWeight: "bold", marginLeft: "8px" }}>
+              {currentActor.actor.split("/").pop().replace(".png", "")}
+            </span>
+
+        </div>
+
 
         <div
           className="text"
@@ -267,25 +286,41 @@ export default function Rejaser() {
           </div>
         </div>
 
+        {/* actor 2 */}
         <div
-          className="current-actor"
+                    className="current-actor"
           style={{
-            background: "linear-gradient( #0404188a, #424ef5)",
-            padding: "10px",
-            border: "1px solid #4e42f5",
-            boxShadow: "0 0 5px #4e42f5, inset 0 0 5px #4e42f5",
-            borderRadius: "10px",
-            width: "200px",
-            height: "200px",
-            transition: "background 0.2s",
+            display: "flex",
+            flexDirection: "column",
+            color: "white",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            gap: "10px",
           }}
-        >
-          <CardMedia
-            component="img"
-            height="100%"
-            image={targetActor.actor}
-            alt="target actor"
-          />
+          >
+          <div
+            style={{
+              background: "linear-gradient( #0404188a, #424ef5)",
+              padding: "10px",
+              border: "1px solid #4e42f5",
+              boxShadow: "0 0 5px #4e42f5, inset 0 0 5px #4e42f5",
+              borderRadius: "10px",
+              width: "100%",
+              height: "100%",
+              transition: "background 0.2s",
+            }}
+          >
+            <CardMedia
+              component="img"
+              height="100%"
+              image={targetActor.actor}
+              alt="target actor"
+            />
+          </div>
+          <span style={{ fontWeight: "bold", marginLeft: "8px" }}>
+            {targetActor.actor.split("/").pop().replace(".png", "")}
+          </span>
         </div>
       </div>
 
@@ -304,7 +339,7 @@ export default function Rejaser() {
         className="film-cards-container"
         style={{
           width: "100%",
-          height: "50%",
+          height: "70%",
           display: "flex",
           justifyContent: "flex-start",
           alignItems: "center",

@@ -146,7 +146,6 @@ const data = [
       "./aflam/YaAnaYaKhalty.jpg",
       "./aflam/amirElBi7ar.jpg",
       "./aflam/folElSinElAzim.jpg",
-      "./aflam/Karkar.jpg",
       "./aflam/ramadanMabrok.jpg",
       "./aflam/WeshEgram.jpg",
       "./aflam/3andlibElDuki.jpg",
@@ -976,7 +975,7 @@ const data = [
   },
   {
     actor: `./actors/mohammedMahmmod.png`,
-    film: ["./aflam/ziko.jpg", "./aflam/aboShanab.jpg"],
+    film: ["./aflam/ziko.jpg", "./aflam/aboShanab.jpg", "./aflam/amirElBi7ar.jpg"],
   },
   {
     actor: `./actors/mohammedRamadan.png`,
