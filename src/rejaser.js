@@ -252,12 +252,9 @@ export default function Rejaser() {
               alt="current actor"
             />
           </div>
-          <span style={{ fontWeight: "bold", marginLeft: "8px" }}>
-            {currentActor.actor.split("/").pop().replace(".png", "")}
-          </span>
         </div>
 
-{/* text */}
+        {/* text */}
         <div
           className="text"
           style={{
@@ -322,9 +319,6 @@ export default function Rejaser() {
               alt="target actor"
             />
           </div>
-          <span style={{ fontWeight: "bold", marginLeft: "8px" }}>
-            {targetActor.actor.split("/").pop().replace(".png", "")}
-          </span>
         </div>
       </div>
 
