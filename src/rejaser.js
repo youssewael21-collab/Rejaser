@@ -103,6 +103,7 @@ export default function Rejaser() {
 
   const filmCards = currentActor.film.map((film) => (
     <Button
+    className="film-card"
       onClick={() => handleFilmClick(film)}
       key={film}
       style={{ minWidth: "20%", height: "100%" }}
@@ -132,7 +133,9 @@ export default function Rejaser() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#050227",
+        background: "linear-gradient(150deg, #11071d, #3e1474 70%)",
+        border: "2px solid #bc42f5",
+        boxShadow: "0 0 5px #bc42f5, inset 0 0 5px #bc42f5",
         borderRadius: "20px",
         padding: "10px",
         cursor: "pointer",
@@ -151,6 +154,7 @@ export default function Rejaser() {
 
   return (
     <div
+      className="rejaser-container"
       style={{
         position: "relative",
         display: "flex",
@@ -170,7 +174,7 @@ export default function Rejaser() {
         style={{
           width: "80%",
           display: "flex",
-          justifyContent: "flex-end",
+          justifyContent: "center",
           alignItems: "center",
           gap: "10px",
           marginBottom: "20px",
@@ -204,7 +208,7 @@ export default function Rejaser() {
       </div>
       <div
         style={{
-          width: "80%",
+          width: "100%",
           height: "250px",
           display: "flex",
           justifyContent: "space-evenly",
@@ -213,6 +217,7 @@ export default function Rejaser() {
         }}
       >
         <div
+          className="current-actor"
           style={{
             background: "linear-gradient( #1812048a, #f5c542)",
             padding: "10px",
@@ -233,16 +238,16 @@ export default function Rejaser() {
         </div>
 
         <div
+          className="text"
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
             gap: "10px",
           }}
         >
-          <div style={{ color: "white", fontSize: "18px" }}>
-            أفلام الممثل الحالي
-          </div>
           <div style={{ color: "#fff", fontSize: "16px", textAlign: "center" }}>
             {message || "اضغط على فيلم لترى إذا كان الممثل التاني فيه."}
           </div>
@@ -263,6 +268,7 @@ export default function Rejaser() {
         </div>
 
         <div
+          className="current-actor"
           style={{
             background: "linear-gradient( #0404188a, #424ef5)",
             padding: "10px",
@@ -284,6 +290,18 @@ export default function Rejaser() {
       </div>
 
       <div
+        style={{
+          color: "white",
+          fontSize: "18px",
+          textAlign: "center",
+          fontWeight: "bold",
+        }}
+      >
+        أفلام الممثل الحالي
+      </div>
+
+      <div
+        className="film-cards-container"
         style={{
           width: "100%",
           height: "50%",
@@ -336,24 +354,15 @@ export default function Rejaser() {
             <Button
               onClick={resetGame}
               style={{
-                background: "#4caf50",
-                color: "white",
+                background: "#f5c542",
+                border: "2px solid #f5c542",
+                boxShadow: "0 0 5px #f5c542",
+                color: "black",
                 fontSize: "18px",
                 padding: "10px 20px",
               }}
             >
               إعادة اللعبة
-            </Button>
-            <Button
-              onClick={resetGame}
-              style={{
-                background: "#2196f3",
-                color: "white",
-                fontSize: "18px",
-                padding: "10px 20px",
-              }}
-            >
-              جرب مرة تانية
             </Button>
           </div>
         </div>
