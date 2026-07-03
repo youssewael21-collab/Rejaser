@@ -94,7 +94,7 @@ body {
   }
 
     .film-card{
-    min-width: 50% !important;
+    max-width: 50% !important;
     height: 80% !important;
   }
 

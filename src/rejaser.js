@@ -207,6 +207,8 @@ export default function Rejaser() {
           بداية جديدة
         </Button>
       </div>
+
+      {/* actor 1 */}
       <div
         style={{
           width: "100%",
@@ -217,8 +219,8 @@ export default function Rejaser() {
           marginBottom: "10px",
         }}
       >
-                <div
-                    className="current-actor"
+        <div
+          className="current-actor"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -227,35 +229,35 @@ export default function Rejaser() {
             justifyContent: "center",
             textAlign: "center",
             gap: "10px",
-          }}
-          >
-
-        <div
-          style={{
-            background: "linear-gradient( #1812048a, #f5c542)",
-            padding: "10px",
-            border: "1px solid #f5c542",
-            boxShadow: "0 0 5px #f5c542, inset 0 0 5px #f5c542",
-            borderRadius: "10px",
-            width: "100%",
-            height: "100%",
-            transition: "background 0.2s",
+            width: "200px",
+            height: "200px",
           }}
         >
-          <CardMedia
-            component="img"
-            height="100%"
-            image={currentActor.actor}
-            alt="current actor"
-          />
+          <div
+            style={{
+              background: "linear-gradient( #1812048a, #f5c542)",
+              padding: "10px",
+              border: "1px solid #f5c542",
+              boxShadow: "0 0 5px #f5c542, inset 0 0 5px #f5c542",
+              borderRadius: "10px",
+              width: "100%",
+              height: "100%",
+              transition: "background 0.2s",
+            }}
+          >
+            <CardMedia
+              component="img"
+              height="100%"
+              image={currentActor.actor}
+              alt="current actor"
+            />
+          </div>
+          <span style={{ fontWeight: "bold", marginLeft: "8px" }}>
+            {currentActor.actor.split("/").pop().replace(".png", "")}
+          </span>
         </div>
-                    <span style={{ fontWeight: "bold", marginLeft: "8px" }}>
-              {currentActor.actor.split("/").pop().replace(".png", "")}
-            </span>
 
-        </div>
-
-
+{/* text */}
         <div
           className="text"
           style={{
@@ -288,7 +290,7 @@ export default function Rejaser() {
 
         {/* actor 2 */}
         <div
-                    className="current-actor"
+          className="current-actor"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -297,8 +299,10 @@ export default function Rejaser() {
             justifyContent: "center",
             textAlign: "center",
             gap: "10px",
+            width: "200px",
+            height: "200px",
           }}
-          >
+        >
           <div
             style={{
               background: "linear-gradient( #0404188a, #424ef5)",
