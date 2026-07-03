@@ -32,6 +32,7 @@ const data = [
   {
     actor: `./actors/7asan7osny.png`,
     film: [
+      "./aflam/bonSoareh.jpg",
       "./aflam/3okal.jpg",
       "./aflam/a7lamElfataElataaesh.jpg",
       "./aflam/aeathono.jpg",
@@ -109,6 +110,7 @@ const data = [
   {
     actor: `./actors/lotfiLabib.png`,
     film: [
+      "./aflam/ShabanElFares.jpg",
       "./aflam/assalEsoed.jpg",
       "./aflam/ElBashaTelmeez.jpg",
       "./aflam/ElTalataYeshtghalonha.jpg",
@@ -196,6 +198,7 @@ const data = [
     film: [
       "./aflam/ElTalataYeshtghalonha.jpg",
       "./aflam/SayeBahr.jpg",
+      "./aflam/GawazaMery.jpg",
       "./aflam/zakiShan.jpg",
       "./aflam/Karkar.jpg",
       "./aflam/elrahina.jpg",
@@ -220,6 +223,7 @@ const data = [
   {
     actor: `./actors/3alaaMorsi.png`,
     film: [
+      "./aflam/ShabanElFares.jpg",
       "./aflam/YaAnaYaKhalty.jpg",
       "./aflam/zakiShan.jpg",
       "./aflam/MedoMashakel.jpg",
@@ -267,6 +271,7 @@ const data = [
   {
     actor: `./actors/ahmedFat7y.png`,
     film: [
+      "./aflam/GawazaMery.jpg",
       "./aflam/kabtenMasr.jpg",
       "./aflam/el7arbEl3alamiaElTalta.jpg",
       "./aflam/3endamaYak3ElAnsan.jpg",
@@ -282,6 +287,8 @@ const data = [
   {
     actor: `./actors/amrAbdElgilel.png`,
     film: [
+      "./aflam/HenaMaysra.jpg",
+      "./aflam/DokanShehata.jpg",
       "./aflam/ziko.jpg",
       "./aflam/SarkhetNamla.jpg",
       "./aflam/KalemnyShokran.jpg",
@@ -524,6 +531,7 @@ const data = [
   {
     actor: `./actors/salahAbdallah.png`,
     film: [
+      "./aflam/GawazaMery.jpg",
       "./aflam/elrahina.jpg",
       "./aflam/elDadaDody.jpg",
       "./aflam/zakiShan.jpg",
@@ -581,6 +589,7 @@ const data = [
   {
     actor: `./actors/tal3atZakria.png`,
     film: [
+      "./aflam/bonSoareh.jpg",
       "./aflam/7a7aWeTofa7a.jpg",
       "./aflam/AbuAli.jpg",
       "./aflam/aboElAraby.jpg",
@@ -672,6 +681,7 @@ const data = [
   {
     actor: `./actors/karemMahmmodAbdeElAziz.png`,
     film: [
+      "./aflam/GawazaMery.jpg",
       "./aflam/ziko.jpg",
       "./aflam/elNazer.jpg",
       "./aflam/Sa3aWaNos.jpg",
@@ -734,6 +744,7 @@ const data = [
   {
     actor: `./actors/fat7iAbdElwehab.png`,
     film: [
+      "./aflam/regata.jpg",
       "./aflam/s3ediFeElGam3aElamirkia.jpg",
       "./aflam/Sa3aWaNos.jpg",
       "./aflam/3awdaElNadla.jpg",
@@ -810,6 +821,8 @@ const data = [
   {
     actor: `./actors/baiomyFoaad.png`,
     film: [
+      "./aflam/GawazaMery.jpg",
+      "./aflam/DokanShehata.jpg",
       "./aflam/wakfetRekala.jpg",
       "./aflam/bankEl7az.jpg",
       "./aflam/kabtenMasr.jpg",
@@ -904,6 +917,8 @@ const data = [
   {
     actor: `./actors/slimanEid.png`,
     film: [
+      "./aflam/regata.jpg",
+      "./aflam/HenaMaysra.jpg",
       "./aflam/kbareh.jpg",
       "./aflam/elfra7.jpg",
       "./aflam/AskarFiElMu3askar.jpg",
@@ -933,7 +948,11 @@ const data = [
   },
   {
     actor: `./actors/ahmedAdam.png`,
-    film: ["./aflam/Ma3leshEhnaBenetbahdel.jpg", "./aflam/FilmHendi.jpg"],
+    film: [
+      "./aflam/Ma3leshEhnaBenetbahdel.jpg",
+      "./aflam/FilmHendi.jpg",
+      "./aflam/ShabanElFares.jpg",
+    ],
   },
   {
     actor: `./actors/ahmedMalik.png`,
@@ -950,6 +969,7 @@ const data = [
   {
     actor: `./actors/ghadaAbdElRazik.png`,
     film: [
+      "./aflam/HenaMaysra.jpg",
       "./aflam/bonSoareh.jpg",
       "./aflam/3awdaElNadla.jpg",
       "./aflam/KalemnyShokran.jpg",
@@ -975,7 +995,11 @@ const data = [
   },
   {
     actor: `./actors/mohammedMahmmod.png`,
-    film: ["./aflam/ziko.jpg", "./aflam/aboShanab.jpg", "./aflam/amirElBi7ar.jpg"],
+    film: [
+      "./aflam/ziko.jpg",
+      "./aflam/aboShanab.jpg",
+      "./aflam/amirElBi7ar.jpg",
+    ],
   },
   {
     actor: `./actors/mohammedRamadan.png`,
@@ -1009,6 +1033,8 @@ const data = [
   {
     actor: `./actors/sabryFoaz.png`,
     film: [
+      "./aflam/HenaMaysra.jpg",
+      "./aflam/DokanShehata.jpg",
       "./aflam/elDadaDody.jpg",
       "./aflam/IbrahimElAbyad.jpg",
       "./aflam/KalemnyShokran.jpg",
@@ -1018,6 +1044,7 @@ const data = [
   {
     actor: `./actors/saydRagab.png`,
     film: [
+      "./aflam/regata.jpg",
       "./aflam/IbrahimElAbyad.jpg",
       "./aflam/SarkhetNamla.jpg",
       "./aflam/weladRezk.jpg",
@@ -1031,6 +1058,8 @@ const data = [
   {
     actor: `./actors/yaserElDobki.png`,
     film: [
+      "./aflam/regata.jpg",
+      "./aflam/GawazaMery.jpg",
       "./aflam/assalEsoed.jpg",
       "./aflam/Aasef3alaElez3ag.jpg",
       "./aflam/lafWeDaoaran.jpg",
